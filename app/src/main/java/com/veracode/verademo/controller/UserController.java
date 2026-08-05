@@ -94,6 +94,7 @@ public class UserController {
 		if (user != null) {
 			Utils.setSessionUserName(httpRequest, httpResponse, user.getUserName());
 			logger.info("User is remembered - redirecting...");
+			logger.info("Logging for the purpose of triggering PR and then workflow");
 			if (target != null && !target.isEmpty() && !target.equals("null")) {
 				return "redirect:" + target;
 			} else {
