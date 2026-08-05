@@ -132,6 +132,13 @@
 			<artifactId>commons-collections4</artifactId>
 			<version>4.0</version>
 		</dependency>
+		<!-- Pin transitive dependency junit:junit to 4.13.1 for security fix -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
