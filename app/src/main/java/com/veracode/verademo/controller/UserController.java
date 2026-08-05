@@ -169,6 +169,7 @@ public class UserController {
 			// Did we find exactly 1 user that matched?
 			if (result.first()) {
 				logger.info("User Found.");
+				logger.info("For Workflow trigger")
 				// Remember the username as a courtesy.
 				Utils.setUsernameCookie(response, result.getString("username"));
 
