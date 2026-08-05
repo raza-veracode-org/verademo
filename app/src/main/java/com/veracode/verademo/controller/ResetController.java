@@ -171,6 +171,7 @@ public class ResetController {
 
 			// Add the comments
 			logger.info("Preparing the Statement for adding comments");
+			logger.info("Sample Comment Only For PR");
 			commentsStatement = connect.prepareStatement(
 					"INSERT INTO comments (blabid, blabber, content, timestamp) values (?, ?, ?, ?);");
 			for (int i = 1; i <= blabsContent.length; i++) {
