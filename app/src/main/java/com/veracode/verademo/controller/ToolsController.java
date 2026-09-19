@@ -83,6 +83,7 @@ public class ToolsController {
 			proc = Runtime.getRuntime().exec(new String[] { "bash", "-c", cmd });
 			/* END EXAMPLE VULNERABILITY */
 
+			/* Sample Comment */
 			proc.waitFor(5, TimeUnit.SECONDS);
 			InputStreamReader isr = new InputStreamReader(proc.getInputStream());
 			BufferedReader br = new BufferedReader(isr);
